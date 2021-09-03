@@ -12,7 +12,7 @@ def Model(INPUT_SIZE=64):
     # Building the model layers
     model = Sequential([
         Conv2D(filters=32, kernel_size=(3, 3),
-               input_shape=(INPUT_SIZE, INPUT_SIZE)),
+               input_shape=(INPUT_SIZE, INPUT_SIZE, 3)),
         Activation('relu'),
         MaxPooling2D(pool_size=(2, 2)),
 
@@ -31,11 +31,15 @@ def Model(INPUT_SIZE=64):
 
         # Used only neuron for output and sigmoid
         # becaues iam using binary loss entropy
-        Dense(1),
-        Activation('sigmoid')
+        # Dense(1),
+        Dense(2),
+        Activation('softmax'),
+        # Activation('sigmoid')
 
     ])
 
     # Compiling the model with the loss and optimizer
-    model.compile(loss='binary_crossentropy',
+    model.compile(loss='categorical_crossentropy',
                   optimizer='adam', metrics=['accuracy'])
+
+    return model
