@@ -1,9 +1,8 @@
 import tensorflow as tf
-from tensorflow import keras
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dropout, Dense, Activation
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten
-from tensorflow.python.keras.engine.input_layer import Input
+
 
 
 def Model(INPUT_SIZE=64):
