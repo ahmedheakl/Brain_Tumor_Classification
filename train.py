@@ -1,7 +1,6 @@
 from sklearn.model_selection import train_test_split
 import numpy as np
 import tensorflow as tf
-from tensorflow import keras
 from tensorflow.keras.utils import normalize, to_categorical
 from model import Model
 

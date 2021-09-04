@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Brain Tumor</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class='navbar navbar-dark bg-dark'>
+            <div class='container' >
+                <p class='navbar-brand'>Brain Tumor Classification Using Machine Learning</p>
+            </div>
+        </div>
+        <div class='content' style='align-items: center;display: flex;flex-direction:column; justify-content:center; padding-top: 20px;'>
+             
+            {% if path %}
+            <div class='image-section'>
+                <img id='image_view' class='img-responsive' src='{{path}}' style='width:300px;height:300px;'/>
+                <br></br>
+            </div>
+            {% endif %}
+
+            <form id='upload_form' method='post' action='http://127.0.0.1:5000/predict' style="display:flex;">
+                <input type='text' name='file' class='form-control' id='image_input' placeholder='Type the link the photo', style='height:50px'>
+                <button type='submit' class='btn btn-info btn-lg' style='padding-left: 20px;'>Predict!</button> 
+            </form>
+
+            <!-- <div class="loader" style="display:none;"></div> -->
+
+            <h3 id="prediction" style='padding-top: 20px;'>
+                <span> 
+                    {{prediction}}
+                </span>
+            </h3>
+
+        </div>
+    </body>
+</html>
