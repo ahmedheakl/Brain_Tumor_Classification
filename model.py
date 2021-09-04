@@ -2,6 +2,11 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dropout, Dense, Activation
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten
 
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dropout, Dense, Activation
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten
+
 
 def Model(INPUT_SIZE=64):
 
