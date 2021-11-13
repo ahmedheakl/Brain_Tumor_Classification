@@ -1,5 +1,5 @@
 # Brain Tumor Classification: Project Overview
-Classifying Brain tumor images using Keras and Open CV.
+Classifying Brain tumor images using Keras and Open CV  with ~90% accuracy.
 * Created a data pipeline to load images, after converting them into RGB, into a numpy array
 * Built the model using Keras API consisting of 3 Conv2D layers
 * Built the Flash API for backend
