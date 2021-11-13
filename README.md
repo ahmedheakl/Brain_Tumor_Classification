@@ -11,5 +11,8 @@ Classifying Brain tumor images using Keras and Open CV.
 
 To run the app, write ```python app.py``` in the terminal
 
+## Website Samples
 
+![No Tumor Sample](https://github.com/ahmedheakl/Brain_Tumor_Classification/blob/main/no_tumor_sample.png)
 
+![Yes Tumor Sample](https://github.com/ahmedheakl/Brain_Tumor_Classification/blob/main/yes_tumor_sample.png)
